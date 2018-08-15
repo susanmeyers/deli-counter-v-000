@@ -4,10 +4,10 @@ def line(katz_deli)
     puts "The line is currently empty."
 
   else
-    list = "The list is currently:"
+    list = "The list is currently: "
     katz_deli.each.with_index do |person, index|
-    list << "#{index +1}. #{person}"
     puts list
+    list << "#{index +1}. #{person}"
   end
   end
 end
