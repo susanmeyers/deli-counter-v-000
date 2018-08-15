@@ -4,13 +4,23 @@ def line(katz_deli)
     puts "The line is currently empty."
 
   else
+    customers = []
     list = "The line is currently: "
     katz_deli.each.with_index do |person, index|
-    list << "#{index +1}. #{person} "
+    customers << "#{index +1}. #{person}"
   end
-    puts list
+    puts list + "#{customers.join(" ")}"
   end
 end
+
+
+def take_a_number(katz_deli, new_person)
+  katz_deli.each do |name, index|
+  puts "take_a_number #{name} #{index +1}"
+  end
+
+end
+
 
 
 
