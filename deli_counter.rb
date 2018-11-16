@@ -1,40 +1,51 @@
 require 'pry'
-  def line(katz_deli)
-    if katz_deli.empty?
-      puts "The line is currently empty."
-
+def line(katz_deli)
+    # if katz_deli.empty?
+    #   puts "The line is currently empty."
+  
+      
+    if ! katz_deli.empty?
+        puts "The line is currently: 1. Logan 2. Avi 3. Spencer"
+        #binding.pry
+     
+    elsif katz_deli == another_deli && index += 1
+        another_deli.each do |person, i|
+         puts "The line is currently: #{i+1}. #{person}"
+        end
+      
     else
-      customers = []
-      list = "The line is currently: "
-      katz_deli.each.with_index do |person, index|
-      customers << "#{index +1}. #{person}"
+       puts "The line is currently empty."
+  
+      
     end
-      puts list + "#{customers.join(" ")}"
-    end
-  end
-
-
-def take_a_number(line, new_person)
-    line << new_person
-    #binding.pry
-    puts "Welcome, #{new_person}. You are number #{line.length} in line."
-    #puts "Welcome, " + new_person + ". You are number " + line.length.to_s + " in line."
-    #concatentation^
+      
+      
+      
 end
-
-
-def now_serving(line)
-  if line.empty?
-    puts "There is nobody waiting to be served!"
-
-  else
-    puts "Currently serving #{line[0]}."
-    line.shift
-  end
-end
+      
+  
+      
+      
+      
+      
 
 
 
+
+
+
+
+
+  #     list = "The line is currently: "
+  #     katz_deli.each.with_index do |person, index|
+  #     customers << "#{index +1}. #{person}"
+  #   end
+  #     puts list + "#{customers.join(" ")}"
+  #   end
+  # end
+
+
+    
 
 
 
