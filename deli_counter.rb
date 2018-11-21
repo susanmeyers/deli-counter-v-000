@@ -17,11 +17,12 @@ require 'pry'
     if deli.empty?
       deli << name
  
-      deli.each.with_index do |name, i|
+    else
+        index = deli.count
          puts "Welcome, #{name}. You are number #{i+1} in line."
-      end
-      #deli.unshift("Grace")
     end
+       deli.pop "#{name}" 
+     
   end
 
 
