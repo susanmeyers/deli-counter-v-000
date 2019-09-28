@@ -14,14 +14,13 @@ require 'pry'
   end
   
   def take_a_number(deli, name)
-    if deli.empty?
+     deli.empty?
       deli << name
  
-    else
-        index = deli.count
-         puts "Welcome, #{name}. You are number #{i+1} in line."
-    end
-       deli.pop "#{name}" 
+      index = deli.count
+       puts "Welcome, #{name}. You are number #{index} in line."
+  
+      # deli.pop "#{name}" 
      
   end
 
