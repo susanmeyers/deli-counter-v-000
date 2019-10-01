@@ -1,12 +1,16 @@
 require 'pry'
 def line(deli)
-  if array(deli) == []
+  if (deli) == []
     puts "The line is currently empty."
     
-  if ! array == []
-    puts "The line is currently: 1. Logan, 2. Avi 3. Spenser"
+   elsif (deli).each_with_index do |name, i|
+     #binding.pry
+      
+      puts "The line is currently: #{i + 1}. #{name}"
+       
+   
   end
-  end
+   end
 end
    
   
