@@ -26,6 +26,7 @@ def now_serving(katz_deli)
   end
   
   if ! katz_deli.empty?
+    binding.pry
     puts katz_deli
   binding.pry
   end
