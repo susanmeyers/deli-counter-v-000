@@ -28,6 +28,7 @@ def now_serving(katz_deli)
   if ! katz_deli.empty?
     katz_deli.each do |name|
       puts "Currently serving #{name}."
+    end
   
   end
     
