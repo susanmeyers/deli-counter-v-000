@@ -26,8 +26,7 @@ def now_serving(katz_deli)
   end
   
   if ! katz_deli.empty?
-    katz_deli.each do |name|
-      puts "Currently serving #{name}."
+      puts "Currently serving #{katz_deli[0]}."
     end
   
   end
