@@ -26,13 +26,9 @@ def now_serving(katz_deli)
   end
   
   if ! katz_deli.empty?
-      puts "Currently serving #{katz_deli[0]}."
-    end
-  
-
-    
-
-
+  puts "Currently serving #{katz_deli[0]}."
+  katz_deli.shift
+  end
 
 
 end
