@@ -16,9 +16,15 @@ end
 
 
 def take_a_number(katz_deli, name)
-  if katz_deli == []
-    katz_deli << name
-  end
+  katz_deli << name
+  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+  
+  
+  
+  # if katz_deli == []
+  #   katz_deli << name
+  # end
+  
   # katz_deli.each_with_index do |name, i|
   #   katz_deli << "#{name} #{i}"
   # puts "Welcome, #{name}. You are number #{i +1} in line."
